@@ -28,6 +28,21 @@ $gsmNetworkIdentifier = new GsmNumberPrefix();
 
 $gsmNetworkIdentifier->getNetworkProvider($phone_number);
 
+Available Response
+=======
+
+1. mtn
+2. airtel
+3. glo
+4. 9mobile
+5. starcomms
+6. visafone
+7. multilinks
+8. zoom
+9. ntel
+10. smile
+11. unknown
+
 Credits
 =======
 
