@@ -66,7 +66,7 @@ class GsmNumberPrefix{
       //check if its a phone number 
       $firstCharacter = substr($number,0,1);
       $firstThreeCharacters = substr($number,0,3);
-      if($firstCharacter == 0 && count($number) == 11) {
+      if($firstCharacter == 0 && strlen($number) == 11) {
             //get the first 4 digits
             $firstFourDigits = substr($number,0,4);
             $firstFiveDigits = substr($number,0,5);
@@ -79,7 +79,7 @@ class GsmNumberPrefix{
                return "unknown";
             }
       }
-      elseif($firstCharacter == "+" && count($number) == 14) {
+      elseif($firstCharacter == "+" && strlen($number) == 14) {
             $firstThreeCharacters = substr($number,1,3);
             if($firstThreeCharacters == "234") {
                $firstFourDigits = "0".substr($number,4,3);
@@ -95,7 +95,7 @@ class GsmNumberPrefix{
                return "unknown";
             }
       }
-      elseif($firstThreeCharacters == "234" && count($number) == 13) {
+      elseif($firstThreeCharacters == "234" && strlen($number) == 13) {
             $firstFourDigits = "0".substr($number,3,3);
             $firstFiveDigits = "0".substr($number,3,4);
             if(isset($mobileNetworkPrefixes[$firstFourDigits]) && !empty($mobileNetworkPrefixes[$firstFourDigits])) {
