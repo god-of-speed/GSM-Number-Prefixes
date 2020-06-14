@@ -75,7 +75,6 @@ class GsmNumberPrefix{
             $firstFourDigits = substr($number,0,4);
             $firstFiveDigits = substr($number,0,5);
 
-            echo [$firstFourDigits,$firstFiveDigits];die();
             if(isset($mobileNetworkPrefixes[$firstFourDigits]) && !empty($mobileNetworkPrefixes[$firstFourDigits])) {
                return $mobileNetworkPrefixes[$firstFourDigits];
             }elseif(isset($mobileNetworkPrefixes[$firstFiveDigits]) && !empty($mobileNetworkPrefixes[$firstFiveDigits])) {

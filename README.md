@@ -15,7 +15,7 @@ Requirements
 Installation
 ============
 
-composer require ebukaubah/gsm-number-prefixes
+composer require ebukaubah/gsm-number-prefixes:dev-master
 
 Usage
 =====
@@ -31,4 +31,4 @@ $gsmNetworkIdentifier->getNetworkProvider($phone_number);
 Credits
 =======
 
-* Ubah Ebuka for the awesome library
+* Ubah Ebuka for the awesome https://github.com/god-of-speed/GSM-Number-Prefixes library
