@@ -2,7 +2,7 @@
     "name": "ebukaubah/gsm-number-prefixes",
     "description": "A php library to determine the network provider for various GSM mobile numbers.",
     "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
+    "license": "MIT",
     "authors": [{
         "name": "Ebuka Ubah",
         "email": "ebukaubah78@gmail.com"
